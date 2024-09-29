@@ -75,29 +75,35 @@ header > p:hover {
     background-size: cover;
 }
 
+.texto {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    padding-left: 10em;
+}
+
 #section1 h1 {
     color: aqua;
     font-size: 4.5em;
-    padding-top: 4.6em;
-    padding-left: 2em;
     width: 600px;
     line-height: 65px;
+    padding-bottom: 1em;
 }
 
-#section1 > p {
-    color: #ccc;
+#section1 > div > p {
+    color: white;
     width: 800px;
     text-align: justify;
-    padding-top: 1.6em;
-    padding-left: 6.6em;
     font-weight: bold;
     font-size: 1.5em;
-    padding-bottom: 6em;
+    text-shadow: 1px 1px 1px black;
 }
 
 .seta {
-    padding-top: 4.6em;
-    text-align: center;  
+    position: absolute; /* ou fixed, dependendo do seu caso */
+    bottom: 0; /* Alinha o elemento à parte inferior */
+    left: 50%; /* Move o elemento para o meio da largura da tela */
+    transform: translateX(-50%);
     animation: pular 2.4s infinite;
 }
 
@@ -336,7 +342,7 @@ button:hover {
         padding-left: 1em; 
     }
 
-    #section1 > p {
+    #section1 > div >  p {
         font-size: 1.3em;
         max-width: 400px; 
         padding-left: 2.6em; 
@@ -375,14 +381,18 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+    .texto {
+        padding-left: 2em;
+        top: 30%;
+    }
+
     #section1 h1 {
         font-size: 2.5em; 
     }
 
-    #section1 > p {
+    #section1 > div > p {
         font-size: 1em; 
         width: 600px;
-
     }
 
     #section2 > img, #section4 > img {

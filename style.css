@@ -100,9 +100,9 @@ header > p:hover {
 }
 
 .seta {
-    position: absolute; /* ou fixed, dependendo do seu caso */
-    bottom: 0; /* Alinha o elemento à parte inferior */
-    left: 50%; /* Move o elemento para o meio da largura da tela */
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
     transform: translateX(-50%);
     animation: pular 2.4s infinite;
 }
@@ -382,18 +382,18 @@ button:hover {
 
 @media (max-width: 768px) {
     .texto {
-        padding-left: 2em;
+        padding-left: 1.4em;
         top: 30%;
     }
 
     #section1 h1 {
         font-size: 2.5em; 
-        width: 350px;
+        width: 400px;
     }
 
     #section1 > div > p {
         font-size: 1em; 
-        width: 330px;
+        width: 350px;
     }
 
     #section2 > img, #section4 > img {
@@ -420,7 +420,7 @@ button:hover {
 
     #section2 > div > button, #section3 > button, #section4 > div > button {
         width: 140px; 
-        margin-left: 3.4em;
+        margin-left: 2.2em;
     }
 
     #section3 h1 {

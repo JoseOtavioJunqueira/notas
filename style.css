@@ -388,12 +388,12 @@ button:hover {
 
     #section1 h1 {
         font-size: 2.5em; 
-        width: 400px;
+        width: 100px;
     }
 
     #section1 > div > p {
         font-size: 1em; 
-        width: 500px;
+        width: 100px;
     }
 
     #section2 > img, #section4 > img {

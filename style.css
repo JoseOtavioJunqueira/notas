@@ -360,10 +360,6 @@ button:hover {
         padding-left: 1em; 
     }
 
-    #section2, #section4 {
-        grid-template-columns: 1fr; 
-    }
-
     table {
         width: 400px; 
         margin-left: 10em; 
@@ -380,16 +376,17 @@ button:hover {
 
 @media (max-width: 768px) {
     #section1 h1 {
-        font-size: 3em; 
+        font-size: 2.5em; 
     }
 
     #section1 > p {
-        font-size: 1.2em; 
+        font-size: 1em; 
+        width: 600px;
+
     }
 
     #section2 > img, #section4 > img {
-        width: 100%; 
-        max-width: none; 
+        display: none;
     }
 
     #section2 > div > h1, #section4 > div > h1 {
@@ -398,14 +395,11 @@ button:hover {
 
     #section2 > div > p, #section4 > div > p {
         font-size: 1em; 
-    }
-
-    #section2, #section4 {
-        grid-template-columns: 1fr; 
+        width: 80vw;
     }
 
     table {
-        width: 200px; 
+        width: 160px; 
         margin-left: 3em; 
     }
 
@@ -420,5 +414,9 @@ button:hover {
 
     #section3 h1 {
         font-size: 2em; 
+    }
+
+    #section3 p {
+        padding-left: 3em;
     }
 }
